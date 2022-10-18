@@ -17,6 +17,7 @@ class ProfileMenuCard extends StatelessWidget{
     Key ? key,
     required this.text,
     required this.press,
+    required this.icon
   }
   ):super(key: key);
     final String text;  //,icon;
@@ -40,8 +41,9 @@ class ProfileMenuCard extends StatelessWidget{
         onPressed: press,
 
         child: 
-        Row(
+        Column(
           children: [
+            icon
             const SizedBox(width: 40),
             Expanded(
               child: 
