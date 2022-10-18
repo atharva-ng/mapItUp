@@ -41,9 +41,9 @@ class ProfileMenuCard extends StatelessWidget{
         onPressed: press,
 
         child: 
-        Column(
+        Row(
           children: [
-            icon
+          
             const SizedBox(width: 40),
             Expanded(
               child: 
@@ -56,6 +56,7 @@ class ProfileMenuCard extends StatelessWidget{
                 ),
               ),
             ),
+            icon,
           ],
         ),              
         ),
