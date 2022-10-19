@@ -1,3 +1,7 @@
+
+import 'package:flutter/animation.dart';
+import 'package:flutter/cupertino%20(2).dart';
+import 'package:flutter/material%20(2).dart';
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/cupertino%20(2).dart';
@@ -13,6 +17,7 @@ class ProfileMenuCard extends StatelessWidget{
     Key ? key,
     required this.text,
     required this.press,
+    required this.icon
   }
   ):super(key: key);
     final String text;  //,icon;
@@ -38,6 +43,7 @@ class ProfileMenuCard extends StatelessWidget{
         child: 
         Row(
           children: [
+          
             const SizedBox(width: 40),
             Expanded(
               child: 
@@ -50,10 +56,9 @@ class ProfileMenuCard extends StatelessWidget{
                 ),
               ),
             ),
+            icon,
           ],
         ),              
         ),
       )
-    );
-  }   
-}
+    );}}
